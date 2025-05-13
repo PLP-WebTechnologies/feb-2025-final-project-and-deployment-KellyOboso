@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusConnect - Your Reliable Bus Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="BusConnect Logo">
+                <h1>BusConnect</h1>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-bus"></i> <span class="nav-text">Home</span></a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> <span class="nav-text">About</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> <span class="nav-text">Contact</span></a></li>
+        </ul>
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <div class="sidebar-bottom">
+            <button class="collapse-btn" id="collapseSidebar" aria-label="Collapse sidebar">
+                <i class="fas fa-angle-double-left"></i>
+            </button>
+        </div>
+    </aside>
+    <div class="main-content">
+        <main>
+            <section class="hero">
+                <h2>Welcome to BusConnect</h2>
+                <p>Your reliable partner for comfortable and safe bus transportation</p>
+                <a href="#routes" class="cta-button">View Routes</a>
+            </section>
+
+            <section id="routes" class="featured-routes">
+                <h2>Popular Routes</h2>
+                <div class="route-grid">
+                    <article class="route-card">
+                        <img src="assets/images/pexels-pixabay-69121.jpg" alt="City Route">
+                        <div class="route-content">
+                            <h3>City Center Express</h3>
+                            <p>Fast and frequent service connecting major city centers...</p>
+                            <div class="route-details">
+                                <span><i class="fas fa-clock"></i> Every 15 mins</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 12 stops</span>
+                            </div>
+                            <a href="#" class="read-more">View Schedule</a>
+                        </div>
+                    </article>
+                    <article class="route-card">
+                        <img src="assets/images/pexels-ellis-1210622.jpg" alt="Suburban Route">
+                        <div class="route-content">
+                            <h3>Suburban Connect</h3>
+                            <p>Comfortable rides to suburban areas with scenic views...</p>
+                            <div class="route-details">
+                                <span><i class="fas fa-clock"></i> Every 30 mins</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 8 stops</span>
+                            </div>
+                            <a href="#" class="read-more">View Schedule</a>
+                        </div>
+                    </article>
+                    <article class="route-card">
+                        <img src="assets/images/pexels-lilartsy-3427742.jpg" alt="Airport Route">
+                        <div class="route-content">
+                            <h3>Airport Shuttle</h3>
+                            <p>Direct service to and from the airport with luggage space...</p>
+                            <div class="route-details">
+                                <span><i class="fas fa-clock"></i> Every 20 mins</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 5 stops</span>
+                            </div>
+                            <a href="#" class="read-more">View Schedule</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>Why Choose BusConnect?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bus"></i>
+                        <h3>Modern Fleet</h3>
+                        <p>Comfortable, air-conditioned buses with free WiFi</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Punctual Service</h3>
+                        <p>Real-time tracking and on-time performance</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>Easy Booking</h3>
+                        <p>Book tickets online or through our mobile app</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe Travel</h3>
+                        <p>Regular maintenance and professional drivers</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to receive route updates and special offers</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>BusConnect</h3>
+                    <p>Your reliable partner for comfortable and safe bus transportation.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2024 BusConnect. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
