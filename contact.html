@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusConnect - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="BusConnect Logo">
+                <h1>BusConnect</h1>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-bus"></i> <span class="nav-text">Home</span></a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> <span class="nav-text">About</span></a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> <span class="nav-text">Contact</span></a></li>
+        </ul>
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <div class="sidebar-bottom">
+            <button class="collapse-btn" id="collapseSidebar" aria-label="Collapse sidebar">
+                <i class="fas fa-angle-double-left"></i>
+            </button>
+        </div>
+    </aside>
+    <div class="main-content">
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Bus Terminal Road, City Center</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@busconnect.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>24/7 Customer Support</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">Inquiry Type</label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">Select an option</option>
+                            <option value="schedule">Schedule Information</option>
+                            <option value="booking">Booking Assistance</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="route">Route (if applicable)</label>
+                        <select id="route" name="route">
+                            <option value="">Select a route</option>
+                            <option value="city-center">City Center Express</option>
+                            <option value="suburban">Suburban Connect</option>
+                            <option value="airport">Airport Shuttle</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for updates and offers
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <!-- Replace with actual map embed code -->
+                <img src="assets/images/pexels-vlasceanu-1386484.jpg" alt="Bus Terminal Location" class="map-placeholder">
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>BusConnect</h3>
+                    <p>Your reliable partner for comfortable and safe bus transportation.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2024 BusConnect. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
